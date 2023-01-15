@@ -1,52 +1,53 @@
-// import Link from "next/link";
-// import ReactMarkdown from "react-markdown";
-// import { Prism as SyntaxHighlighter } from "react-syntax-highlighter";
-// import style from "react-syntax-highlighter/dist/cjs/styles/prism/dracula";
-// import Image from "next/image";
+import Link from "next/link";
+import ReactMarkdown from "react-markdown";
+import { Prism as SyntaxHighlighter } from "react-syntax-highlighter";
+import style from "react-syntax-highlighter/dist/cjs/styles/prism/dracula";
+import Image from "next/image";
 
-// import { getPostBySlug, getPostsSlugs } from "@utils/posts";
+import { getPostBySlug, getPostsSlugs } from "@utils/posts";
 
-// export default function Post({ post, frontmatter, nextPost, previousPost }) {
-//   return (
-//     <Layout>
-//       <SEO
-//         title={frontmatter.title}
-//         description={frontmatter.description || post.excerpt}
-//       />
+export default function Post({ post, frontmatter, nextPost, previousPost }) {
+  return (
+    <></>
+    // <Layout>
+    //   <SEO
+    //     title={frontmatter.title}
+    //     description={frontmatter.description || post.excerpt}
+    //   />
 
-//       <article>
-//         <header className="mb-8">
-//           <h1 className="mb-2 text-6xl font-black leading-none font-display">
-//             {frontmatter.title}
-//           </h1>
-//           <p className="text-sm">{frontmatter.date}</p>
-//         </header>
-//         <ReactMarkdown  remarkPlugins={[remarkGfm]} >{post.content}</ReactMarkdown>
-//         <hr className="mt-4" />
-//         <footer>
-//           <Bio className="mt-8 mb-16" />
-//         </footer>
-//       </article>
+    //   <article>
+    //     <header className="mb-8">
+    //       <h1 className="mb-2 text-6xl font-black leading-none font-display">
+    //         {frontmatter.title}
+    //       </h1>
+    //       <p className="text-sm">{frontmatter.date}</p>
+    //     </header>
+    //     <ReactMarkdown  remarkPlugins={[remarkGfm]} >{post.content}</ReactMarkdown>
+    //     <hr className="mt-4" />
+    //     <footer>
+    //       <Bio className="mt-8 mb-16" />
+    //     </footer>
+    //   </article>
 
-//       <nav className="flex flex-wrap justify-between mb-10">
-//         {previousPost ? (
-//           <Link href={"/posts/[slug]"} as={`/posts/${previousPost.slug}`} className="text-lg font-bold">
-//               ← {previousPost.frontmatter.title}
-//           </Link>
-//         ) : (
-//           <div />
-//         )}
-//         {nextPost ? (
-//           <Link href={"/posts/[slug]"} as={`/posts/${nextPost.slug}`}  className="text-lg font-bold">
-//             {nextPost.frontmatter.title} →
-//           </Link>
-//         ) : (
-//           <div />
-//         )}
-//       </nav>
-//     </Layout>
-//   );
-// }
+    //   <nav className="flex flex-wrap justify-between mb-10">
+    //     {previousPost ? (
+    //       <Link href={"/posts/[slug]"} as={`/posts/${previousPost.slug}`} className="text-lg font-bold">
+    //           ← {previousPost.frontmatter.title}
+    //       </Link>
+    //     ) : (
+    //       <div />
+    //     )}
+    //     {nextPost ? (
+    //       <Link href={"/posts/[slug]"} as={`/posts/${nextPost.slug}`}  className="text-lg font-bold">
+    //         {nextPost.frontmatter.title} →
+    //       </Link>
+    //     ) : (
+    //       <div />
+    //     )}
+    //   </nav>
+    // </Layout>
+  );
+}
 
 // export async function getStaticPaths() {
 //   const paths = getPostsSlugs();
@@ -70,13 +71,3 @@
 
 //   return { props: postData };
 // }
-
-// const CodeBlock = ({ language, value }) => {
-//   return (
-//     <SyntaxHighlighter style={style} language={language}>
-//       {value}
-//     </SyntaxHighlighter>
-//   );
-// };
-
-
