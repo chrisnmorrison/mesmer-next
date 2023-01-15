@@ -1,5 +1,4 @@
 import Link from "next/link";
-import { Bio } from "./../components/Bio";
 import { SEO } from "../components/Seo";
 import { getSortedPosts } from "@utils/posts";
 import { generateRssPostsFeed } from "@utils/rss";
