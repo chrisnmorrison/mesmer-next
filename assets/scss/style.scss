@@ -18,7 +18,7 @@
 html {
   scroll-behavior: smooth;
   font-family: inherit;
-  transition: all 0.2s;
+  transition: all 0.3s;
 }
 
 .navbar-brand img,
@@ -26,6 +26,8 @@ html {
   height: 2.8rem !important;
   width: auto;
 }
+
+
 
 .history .shape-big {
   display: none !important;

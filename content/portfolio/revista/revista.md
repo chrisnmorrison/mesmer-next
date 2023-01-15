@@ -14,6 +14,6 @@ Revista is a blog/magazine template that we released completely free, for anyone
 
 Best of all, Revista is open-source. If you have an idea for a blog/magazine site and would like to use Revista, you can go ahead and use it without our permission.
 
-If you'd like to use Revista but aren't sure how to set up a GatsbyJS website, <a href="/contact">don't hesitate to contact us for a quote</a>. We're happy to customize Revista to fit your needs and set you up with static blog hosting.
+If you'd like to use Revista but aren't sure how to set up a GatsbyJS website, [don't hesitate to contact us](/contact) for a quote. We're happy to customize Revista to fit your needs and set you up with static blog hosting.
 
 

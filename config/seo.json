@@ -1,16 +1,16 @@
 {
   "siteMetadata": {
-    "title": "Next.js Starter Blog",
+    "title": "Mesmer Design",
     "author": {
-      "name": "Jose Felix",
-      "summary": "who works building clean user interfaces with React.",
-      "link": "https://jfelix.info"
+      "name": "Chris Morrison",
+      "summary": "Web Developer specializing in static site generators like Next.js",
+      "link": "https://mesmerdesign.ca"
     },
-    "description": "A blog created with Next.js and Tailwind.css",
-    "siteUrl": "https://nextjs-starter-blog-new-demo.vercel.app/",
+    "description": "Mesmer Design specializes in web design and development. 100% hand-coded, optimized static sites using modern static site generators like Next.js and Gatsby.",
+    "siteUrl": "https://mesmerdesign.ca",
     "language": "en-US",
     "social": {
-      "twitter": "Jose_R_Felix"
+      "twitter": ""
     }
   }
 }

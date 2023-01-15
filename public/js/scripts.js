@@ -1,4 +1,4 @@
-// define all UI variable
+// define all UI letiable
 const navToggler = document.querySelector('.navbar-toggler');
 const navMenu = document.querySelector('#main-nav');
 
@@ -25,3 +25,26 @@ function navLinkClick() {
     navToggler.click();
   }
 }
+
+let prevScrollpos = window.scrollY;
+window.onscroll = function() {
+let currentScrollPos = window.scrollY;
+  if (prevScrollpos > currentScrollPos) {
+    document.querySelector(".navbar").style.top = "0";
+  } else {
+    document.querySelector(".navbar").style.top = "-50px";
+  }
+  prevScrollpos = currentScrollPos;
+}
+
+let myNav = document.querySelector('.navbar');
+window.onscroll = function () { 
+    if (document.body.scrollTop >= 200 || document.documentElement.scrollTop >= 200 ) {
+        myNav.classList.add("nav-colored");
+        myNav.classList.remove("nav-transparent");
+    } 
+    else {
+        myNav.classList.add("nav-transparent");
+        myNav.classList.remove("nav-colored");
+    }
+};

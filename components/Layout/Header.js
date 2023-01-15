@@ -1,9 +1,11 @@
 import React from 'react'
 import Link from 'next/link'
 import Image from 'next/image'
+import styled from 'styled-components'
 
-const Header = () => {
+ const Header = () => {
   return (
+    <Styles>
 <header className="navigation">
   <div className="container-fluid">
     <div className="row">
@@ -46,7 +48,7 @@ const Header = () => {
     </div>
   </div>
 </header>
-
+</Styles>
 
 
 
@@ -59,3 +61,12 @@ const Header = () => {
 }
 
 export default Header
+
+export const Styles = styled.div`
+.nav-colored{
+background-color: black;
+}
+
+.nav-transparent{
+  background-color: transparent;
+}` 

@@ -1,7 +1,7 @@
 backend:
   name: git-gateway
   branch: main
-media_folder: static/img
+media_folder: public/images
 slug:
   encoding: 'ascii'
   clean_accents: true
@@ -44,7 +44,7 @@ collections:
             name: 'title'
             widget: 'string'
             required: true
-            pattern: ['^.{0,160}$', 'Must have at least 20 characters']
+            pattern: ['^.{0,160}$', 'Must have under 160 characters for good SEO']
           - { label: 'Featured Image', name: 'image', widget: 'image', required: true }
           - label: 'Tags'
             name: 'tags'

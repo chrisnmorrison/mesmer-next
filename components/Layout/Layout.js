@@ -14,6 +14,9 @@ import { Montserrat } from "@next/font/google";
 import Head from "next/head";
 const montserrat = Montserrat({ subsets: ["latin"] });
 
+import { Poppins } from "@next/font/google";
+const poppins = Poppins({ subsets: ["latin"],  weight: ['100','200','300','400','500','600','700','800','900'] });
+
 export function Layout({ children }) {
   return (
     <>
@@ -26,3 +29,5 @@ export function Layout({ children }) {
     </>
   );
 }
+
+
