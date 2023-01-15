@@ -11,7 +11,6 @@ import html from 'remark-html';
 import remarkGfm from 'remark-gfm'
 import rehypeRaw from "rehype-raw";
 import { Layout } from "../../components/Layout";
-import { Bio } from "../../components/Bio";
 import { SEO } from "../../components/Seo";
 import {
   getPortfolioBySlug,
@@ -106,13 +105,3 @@ const CodeBlock = ({ language, value }) => {
 
 
 
-const MarkdownImage = ({ alt, src }) => {
-  return (
-    <Image
-      alt={alt}
-      src={require(`../../content/assets/${src}`)}
-      placeholder="blur"
-      className="w-full"
-    />
-  );
-};

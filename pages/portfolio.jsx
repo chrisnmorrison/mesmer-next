@@ -1,7 +1,6 @@
 import Link from "next/link";
 
 import { Layout } from "../components/Layout";
-import { Bio } from "../components/Bio";
 import { SEO } from "../components/Seo";
 import { getSortedPortfolio, getSortedPosts } from "@utils/posts";
 import { generateRssPostsFeed } from "@utils/rss";

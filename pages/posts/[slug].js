@@ -4,7 +4,6 @@ import { Prism as SyntaxHighlighter } from "react-syntax-highlighter";
 import style from "react-syntax-highlighter/dist/cjs/styles/prism/dracula";
 import Image from "next/image";
 
-import { Layout, SEO, Bio } from "@components/common";
 import { getPostBySlug, getPostsSlugs } from "@utils/posts";
 
 export default function Post({ post, frontmatter, nextPost, previousPost }) {
@@ -22,12 +21,7 @@ export default function Post({ post, frontmatter, nextPost, previousPost }) {
           </h1>
           <p className="text-sm">{frontmatter.date}</p>
         </header>
-        <ReactMarkdown
-          className="mb-4 prose lg:prose-lg dark:prose-dark"
-          escapeHtml={false}
-          source={post.content}
-          renderers={{ code: CodeBlock, image: MarkdownImage }}
-        />
+        <ReactMarkdown  remarkPlugins={[remarkGfm]} >{post.content}</ReactMarkdown>
         <hr className="mt-4" />
         <footer>
           <Bio className="mt-8 mb-16" />
@@ -85,13 +79,4 @@ const CodeBlock = ({ language, value }) => {
   );
 };
 
-const MarkdownImage = ({ alt, src }) => {
-  return (
-    <Image
-      alt={alt}
-      src={require(`../../content/assets/${src}`)}
-      placeholder="blur"
-      className="w-full"
-    />
-  );
-};
+
