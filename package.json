@@ -2,13 +2,14 @@
   "name": "nextjs-blog-starter",
   "version": "0.3.0",
   "npm": ">=8.0.0 <9.0.0",
-    "node": ">=16.0.0 <17.0.0",
+  "node": ">=16.0.0 <17.0.0",
   "description": "A Next.js template for a blog website.",
   "private": true,
   "scripts": {
     "dev": "next dev",
     "build": "next build",
-    "start": "next start"
+    "start": "next start",
+    "export": "next export"
   },
   "dependencies": {
     "@fullhuman/postcss-purgecss": "^5.0.0",
