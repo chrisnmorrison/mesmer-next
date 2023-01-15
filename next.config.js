@@ -1,15 +1,8 @@
 const withCss = require("@zeit/next-css");
 const withPurgeCss = require("next-purgecss");
-const withPlugins = require('next-compose-plugins');
-const optimizedImages = require('next-optimized-images');
 
 module.exports = {
-  optimizedImages,
-
-  images: {
-    loader: 'akamai',
-    path: '',
-  },
+  
   future: {
     webpack5: true, // by default, if you customize webpack config, they switch back to version 4.
     // Looks like backward compatibility approach.

@@ -4,11 +4,11 @@ import { Prism as SyntaxHighlighter } from "react-syntax-highlighter";
 import style from "react-syntax-highlighter/dist/cjs/styles/prism/dracula";
 import Image from "next/image";
 import PageTitle from "@components/PageTitle";
-import markdownToHtml from "../../lib/markdownToHtml";
-import { remark } from "remark";
-import html from "remark-html";
+import markdownToHtml from '../../lib/markdownToHtml'
+import { remark } from 'remark';
+import html from 'remark-html';
 
-import remarkGfm from "remark-gfm";
+import remarkGfm from 'remark-gfm'
 import rehypeRaw from "rehype-raw";
 import { Layout } from "../../components/Layout";
 import { SEO } from "../../components/Seo";
@@ -19,19 +19,8 @@ import {
   getPostsSlugs,
 } from "@utils/posts";
 
-export default function Post({
-  post,
-  frontmatter,
-  nextPost,
-  previousPost,
-  title,
-  date,
-  description,
-  category,
-  image,
-  content,
-}) {
-  console.log(frontmatter);
+export default function Post({ post, frontmatter, nextPost, previousPost, title, date, description, category, image, content }) {
+  console.log(frontmatter)
   return (
     <>
       <SEO
@@ -45,7 +34,7 @@ export default function Post({
           <div className="row">
             <div className="col-lg-8">
               <div className="work-single-image">
-                <img
+                <Image
                   className="img-fluid w-100"
                   src={`/${frontmatter.image}`}
                   alt="Revista"
@@ -54,16 +43,9 @@ export default function Post({
                 />
               </div>
               <div className="work-single-content">
-                <ReactMarkdown remarkPlugins={[remarkGfm]}>
-                  {post.content}
-                </ReactMarkdown>
-                {frontmatter.github ? (
-                  <a
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    href={frontmatter.github}
-                  />
-                ) : null}
+              <ReactMarkdown  remarkPlugins={[remarkGfm]} >{post.content}</ReactMarkdown>
+        {frontmatter.github ? <a target='_blank' rel='noopener noreferrer' href={frontmatter.github}/> : null}
+               
               </div>
             </div>
             <div className="col-lg-4">
@@ -85,9 +67,10 @@ export default function Post({
           </div>
         </div>
       </section>
-    </>
+      </>
   );
 }
+
 
 export async function getStaticPaths() {
   const paths = getPortfolioSlugs();
@@ -119,3 +102,6 @@ const CodeBlock = ({ language, value }) => {
     </SyntaxHighlighter>
   );
 };
+
+
+
