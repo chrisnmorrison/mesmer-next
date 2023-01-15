@@ -36,7 +36,7 @@ export default function Home({ portfolio }) {
                 >
                   <div className="portfolio-item text-center">
                   <div className={"image-container"}>
-                  <Image
+                  <img
                         alt="portfolio item thumbnail"
                         src={`/${image}`}
                         fill

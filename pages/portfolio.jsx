@@ -10,7 +10,7 @@ import Cta1 from "@components/Cta/Cta1";
 
 export default function Home({ portfolio }) {
   return (
-      <Styles>
+    <Styles>
       <PageTitle title="Portfolio" />
       <SEO title="All of our favourite portfolio projects" />
 
@@ -25,14 +25,14 @@ export default function Home({ portfolio }) {
                   data-aos="image-reveal"
                 >
                   <div className="portfolio-item text-center">
-                  <div className={"image-container"}>
-                  <Image
+                    <div className={"image-container"}>
+                      <img
                         alt="portfolio item thumbnail"
                         src={`/${image}`}
                         fill
                         className={"image img-fluid"}
                       />
-              </div>
+                    </div>
                     <p className="sm product-name">{title}</p>
                   </div>
                 </a>{" "}
@@ -41,9 +41,8 @@ export default function Home({ portfolio }) {
           </div>
         </div>
       </section>
-<Cta1/>
-      
-      </Styles>
+      <Cta1 />
+    </Styles>
   );
 }
 
@@ -59,9 +58,9 @@ export async function getStaticProps() {
 }
 
 export const Styles = styled.div`
-.image-holder{
-  display: block;
-overflow: hidden;
-margin-bottom: 38px;
+  .image-holder {
+    display: block;
+    overflow: hidden;
+    margin-bottom: 38px;
   }
-`
+`;

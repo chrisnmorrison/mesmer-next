@@ -1,18 +1,16 @@
 import React from "react";
-import Image from 'next/image'
+import Image from "next/image";
 
 const Contact = () => {
   return (
     <section className="contact section">
       <div className="shape-big">
-      
-         <Image
-        alt="background shape"
-        src={`/images/shape-big.png`}
-        width={500}
-        height={500}
-     
-      />
+        <img
+          alt="background shape"
+          src={`/images/shape-big.png`}
+          width={500}
+          height={500}
+        />
       </div>
       <div className="container">
         <div className="row">

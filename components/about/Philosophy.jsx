@@ -8,10 +8,14 @@ const Philosophy = () => {
         <div className="row">
           <div className="col-lg-6 my-auto item-order-mob">
             <div className="philosophy-image mb-5 mb-lg-0 mt-5 mt-lg-1">
-            <div className={"image-container"}>
-            <Image alt="philosophy" src="/images/philosophy-image.jpg" fill className={"image img-fluid"} />
+              <div className={"image-container"}>
+                <img
+                  alt="philosophy"
+                  src="/images/philosophy-image.jpg"
+                  fill
+                  className={"image img-fluid"}
+                />
               </div>
-              
             </div>
           </div>
           <div className="col-lg-5 align-self-center ml-auto">

@@ -5,7 +5,7 @@ const History = () => {
   return (
     <section className="history section">
       <div className="shape-big">
-        <Image
+        <img
           src="/images/shape-big.png"
           alt="background shape "
           width={500}
@@ -50,7 +50,11 @@ const History = () => {
           <div className="col-lg-6 p-5">
             <div className="history-image">
               <div className={"image-container"}>
-                <Image src="/images/creative1.jpeg" fill className={"image p-5 img-fluid"} />
+                <img
+                  src="/images/creative1.jpeg"
+                  fill
+                  className={"image p-5 img-fluid"}
+                />
               </div>
             </div>
           </div>
