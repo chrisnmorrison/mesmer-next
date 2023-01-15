@@ -3,7 +3,7 @@ import Link from "next/link";
 import { Layout } from "../components/Layout";
 import { SEO } from "../components/Seo";
 import { getSortedPortfolio, getSortedPosts } from "@utils/posts";
-import { generateRssPostsFeed } from "@utils/rss";
+// import { generateRssPostsFeed } from "@utils/rss";
 import PageTitle from "@components/PageTitle";
 import styled from "styled-components";
 import Cta1 from "@components/Cta/Cta1";
@@ -49,7 +49,7 @@ export default function Home({ portfolio }) {
 }
 
 export async function getStaticProps() {
-  generateRssPostsFeed();
+  // generateRssPostsFeed();
   const portfolio = getSortedPortfolio();
 
   return {

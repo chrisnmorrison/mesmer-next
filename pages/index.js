@@ -1,7 +1,7 @@
 import Link from "next/link";
 import { SEO } from "../components/Seo";
 import { getSortedPosts } from "@utils/posts";
-import { generateRssPostsFeed } from "@utils/rss";
+// import { generateRssPostsFeed } from "@utils/rss";
 import HomeHero from "@components/home/HomeHero";
 import Services from "@components/home/Services";
 import Cta1 from "@components/Cta/Cta1";
@@ -60,7 +60,7 @@ export default function Home({ portfolio }) {
 }
 
 export async function getStaticProps() {
-  generateRssPostsFeed();
+  // generateRssPostsFeed();
   const portfolio = getSortedPortfolio();
 
   return {
