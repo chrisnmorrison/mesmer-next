@@ -22,7 +22,7 @@ import {
 export default function Post({ post, frontmatter, nextPost, previousPost, title, date, description, category, image, content }) {
   console.log(frontmatter)
   return (
-    <Layout>
+    <>
       <SEO
         title={frontmatter.title}
         description={frontmatter.description || post.excerpt}
@@ -67,7 +67,7 @@ export default function Post({ post, frontmatter, nextPost, previousPost, title,
           </div>
         </div>
       </section>
-    </Layout>
+      </>
   );
 }
 
