@@ -1,5 +1,6 @@
 import React from 'react'
-
+import {FaFacebookSquare, FaInstagramSquare, FaGithubSquare
+} from 'react-icons/fa'
 const Footer = () => {
   return (
     <footer className="footer">
@@ -33,11 +34,11 @@ const Footer = () => {
               <li className="list-inline-item"><a href="/contact">Contact</a></li>
             </ul>
           </nav>
-          <p>We specialize in high-end, modern Web Design and Development.</p>
+          <p>We specialize in 100% hand-coded, optimized static sites.</p>
           <ul className="social-links list-inline">
-            <li className="list-inline-item"><a aria-label="Link to our Facebook page" href="https://www.facebook.com/msmrdesign" target="_blank"><i className="fa fa-facebook" /></a></li>
-            <li className="list-inline-item"><a aria-label="Link to our Instagram page" href="https://www.instagram.com/mesmerdesign" target="_blank"><i className="fa fa-instagram" /></a></li>
-            <li className="list-inline-item"><a aria-label="Link to our Github page" href="https://github.com/chrisnmorrison" target="_blank"><i className="fa fa-github" /></a></li>
+            <li className="list-inline-item footer-icon-facebook"><a aria-label="Link to our Facebook page" href="https://www.facebook.com/msmrdesign" target="_blank"><FaFacebookSquare color="#4267B2" height={48} size = '5x'/></a></li>
+            <li className="list-inline-item footer-icon-instagram"><a aria-label="Link to our Instagram page" href="https://www.instagram.com/mesmerdesign" target="_blank"><FaInstagramSquare color="#fb396d" height={48} size = '5x'/></a></li>
+            <li className="list-inline-item footer-icon-github"><a aria-label="Link to our Github page" href="https://github.com/chrisnmorrison" target="_blank"><FaGithubSquare color="white" height={48} size = '5x'/></a></li>
           </ul>
         </div>
       </div>

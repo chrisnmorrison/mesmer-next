@@ -48,6 +48,8 @@
                         font-weight: 500; 
                         font-size: 14px;
                         text-decoration: none;
+
+                        
                     }
                     &:last-child{
                         a{
@@ -71,21 +73,15 @@
         ul.social-links{
             li{
                 a{
-                    background: $white;
                     border-radius: 100%;
                     display: block;
-                    height: 35px;
+                    height: 2rem;
                     text-align: center;
                     transition: all .3s ease;
-                    width: 35px;
-                    i{
-                        color: #242424;
-                        font-size: 16px;
-                        line-height: 35px;
-                    }
+                    width: 2rem;
+                  
                     &:hover{
-                        background: $primary-light;
-                        transform: translateY(-5px);
+                        transform: translateY(-3px);
                     }
                 }
                 &:not(:last-child){

@@ -1,4 +1,3 @@
-
 import { SEO } from "../components/Seo";
 
 import Cta1 from "@components/Cta/Cta1";
@@ -12,8 +11,10 @@ export default function About() {
     <>
       <SEO title="All posts" />
       <PageTitle title="Frequently Asked Questions" />
-     
-      <Cta1/>
+      <History />
+      <Team />
+      <Philosophy />
+      <Cta1 />
     </>
   );
 }
