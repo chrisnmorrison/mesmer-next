@@ -1,0 +1,239 @@
+@import "variables";
+@import "mixins";
+@import "vendors/bootstrap";
+@import "typography";
+@import "buttons";
+@import "common";
+@import "templates/navigation";
+@import "templates/hero-area";
+@import "templates/services";
+@import "templates/portfolios";
+@import "templates/testimonial";
+@import "templates/cta";
+@import "templates/about";
+@import "templates/contact";
+@import "templates/footer";
+@import "templates/faq";
+
+html {
+  scroll-behavior: smooth;
+  font-family: inherit;
+}
+
+.navbar-brand img,
+.logo a img {
+  height: 2.8rem !important;
+  width: auto;
+}
+
+.history .shape-big {
+  display: none !important;
+}
+
+.hidden {
+  display: none;
+}
+
+img {
+  border-radius: 5px;
+}
+
+.btn {
+  border-radius: 3px;
+}
+
+.case-timeline {
+  position: relative;
+}
+
+.case-timeline-divider {
+  display: block;
+  position: absolute;
+  content: "";
+  top: 0;
+  bottom: 0;
+  left: 50%;
+  z-index: 0;
+  width: 2px;
+  height: auto;
+  margin-left: -1px;
+  background-color: #eee;
+}
+
+.case-timeline-dot {
+  display: block;
+  position: absolute;
+  top: 75px;
+  left: 50%;
+  z-index: 1;
+  content: " ";
+  width: 20px;
+  height: 20px;
+  margin-left: -10px;
+  background-color: #fff;
+  border-width: 5px;
+  border-style: solid;
+  border-radius: 50%;
+  color: $primary-color;
+}
+
+.content-padding {
+  padding: 100px 0;
+}
+
+.text-color {
+  color: $primary-color;
+}
+
+
+@media only screen and (max-width: 768px) {
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6,
+  img,
+  .row,
+  .team-member,
+  .team-member-image,
+  .container,
+  .content,
+  .btn,
+  .service-item {
+    text-align: center !important;
+    margin: 0 auto !important;
+  }
+  p {
+    text-align: center !important;
+    margin: 0 auto 0.8rem !important;
+  }
+
+  p {
+    font-size: 14px;
+  }
+
+  .page-scroll,
+  .scroll-down {
+    display: none;
+  }
+
+  .team-member-image {
+    max-width: 50vw;
+  }
+
+  .case-img {
+    padding: 30px;
+  }
+
+  .footer .content .footer-nav ul li a,
+  .footer .content .footer-nav ul li:last-child a {
+    margin: 25px;
+    padding: 0;
+    line-height: 10px;
+    display: block;
+  }
+
+  .social-links {
+    margin-top: 50px;
+  }
+
+  .scroll-top {
+    margin-bottom: 40px;
+  }
+
+  h6 {
+    line-height: 3;
+  }
+
+  h1,
+  h2 {
+    font-size: 30px;
+  }
+
+  .team-member-content {
+    margin-top: 2px;
+  }
+
+  .section {
+    padding: 40px 0;
+  }
+
+  .page-title {
+    padding: 150px 0 37px;
+    background-image: url(/images/bg/cover.jpg);
+    background-size: cover;
+    background-position: 69%;
+    position: relative;
+  }
+
+  .hero-area .container {
+    // background: #00000048;
+    padding: 3rem 0;
+    border-radius: 5px;
+  }
+
+  .hero-area {
+    margin: 50px 0 10px 0;
+    padding: 177px 0 120px 0;
+  }
+
+  .service-item .icon {
+    margin-bottom: 20px;
+  }
+
+  .service-item {
+    padding: 38px 30px;
+  }
+
+  .portfolio-item .image-holder {
+    margin-bottom: 18px;
+  }
+
+  .footer .logo {
+    margin-bottom: 11px;
+  }
+
+  .footer .content .footer-nav ul li a,
+  .footer .content .footer-nav ul li:last-child a {
+    margin: 19px;
+  }
+
+  .footer .content .footer-nav {
+    margin-bottom: 28px;
+  }
+
+  .social-links {
+    margin-top: 29px;
+  }
+
+  .footer .content .scroll-top {
+    margin-top: 21px;
+  }
+
+  .footer {
+    padding: 42px 0;
+  }
+
+  .contact-info p {
+    margin: 1rem 0 !important;
+    line-height: 16px;
+  }
+}
+
+@media (max-width: 1199px) {
+  .hero-area .scroll-down {
+    left: 50%;
+    bottom: 61px;
+  }
+}
+
+@media screen and (max-width: 991px) {
+  .item-order-mob {
+    order: 2;
+  }
+
+  p{
+    font-weight: 500;
+  }
+}

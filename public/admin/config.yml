@@ -1,0 +1,80 @@
+backend:
+  name: git-gateway
+  branch: main
+media_folder: static/img
+slug:
+  encoding: 'ascii'
+  clean_accents: true
+  sanitize_replacement: '_'
+collections:
+  - name: 'pages'
+    label: 'Pages'
+    files:
+      - label: 'Blog'
+        name: 'blog'
+        folder: 'content/blog'
+        create: true
+        slug: '{{slug}}'
+        fields:
+          - { label: 'Draft', name: 'draft', widget: 'boolean', required: true }
+          - { label: 'Title', name: 'title', widget: 'string', required: true }
+          - { label: 'Publish Date', name: 'date', widget: 'datetime', required: true }
+          - { label: 'Featured Image', name: 'image', widget: 'image', required: true }
+          - label: 'Body'
+            name: 'body'
+            widget: 'markdown'
+            required: true
+            modes: ['raw', 'rich_text']
+      - label: 'Portfolio'
+        name: 'portfolio'
+        folder: 'content/portfolio'
+        create: true
+        slug: '{{slug}}'
+        fields:
+          - label: 'Draft'
+            name: 'draft'
+            widget: 'boolean'
+            required: true
+          - label: 'Title'
+            name: 'title'
+            widget: 'string'
+            required: true
+          - { label: 'Publish Date', name: 'date', widget: 'datetime', required: true }
+          - label: 'Description'
+            name: 'title'
+            widget: 'string'
+            required: true
+            pattern: ['^.{0,160}$', 'Must have at least 20 characters']
+          - { label: 'Featured Image', name: 'image', widget: 'image', required: true }
+          - label: 'Tags'
+            name: 'tags'
+            widget: 'select'
+            multiple: true
+            min: 1
+            max: 9
+            options:
+              [
+                'Web Development',
+                'Photoshop',
+                'Design',
+                'UI/UX',
+                'Gatsby',
+                'Next.js',
+                'Hugo',
+                'Headless CMS',
+                'Redesign',
+              ]
+            default: ['Web Development']
+          - label: 'Body'
+            name: 'body'
+            widget: 'markdown'
+            required: true
+            modes: ['raw', 'rich_text']
+          - label: 'Github Link'
+            name: 'github'
+            widget: 'string'
+            required: false
+          - label: 'Live Link'
+            name: 'link'
+            widget: 'string'
+            required: false
