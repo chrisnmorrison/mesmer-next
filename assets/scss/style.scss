@@ -18,6 +18,7 @@
 html {
   scroll-behavior: smooth;
   font-family: inherit;
+  transition: all 0.2s;
 }
 
 .navbar-brand img,
@@ -44,6 +45,10 @@ img {
 
 .case-timeline {
   position: relative;
+}
+
+a:hover{
+  text-decoration: none;
 }
 
 .case-timeline-divider {
@@ -101,12 +106,12 @@ img {
   .content,
   .btn,
   .service-item {
-    text-align: center !important;
-    margin: 0 auto !important;
+    text-align: center ;
+    margin: 0 auto ;
   }
   p {
-    text-align: center !important;
-    margin: 0 auto 0.8rem !important;
+    text-align: center;
+    margin: 0 auto 0.8rem;
   }
 
   p {
@@ -251,5 +256,17 @@ img {
     width: 100% !important;
     position: relative !important;
     height: unset !important;
+  }
+}
+
+@media only screen and (max-width: 1089px) {
+  #navigation #navbar-menu ul li a{
+    font-size: 1rem !important;
+  }
+}
+
+@media only screen and (max-width: 1027px) {
+  #navigation #navbar-menu ul li a{
+    font-size: .95rem !important;
   }
 }

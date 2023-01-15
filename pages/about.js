@@ -9,8 +9,8 @@ import Philosophy from "@components/about/Philosophy";
 export default function About() {
   return (
     <>
-      <SEO title="All posts" />
-      <PageTitle title="Frequently Asked Questions" />
+      <SEO title="All about Mesmer Design" />
+      <PageTitle title="About" />
       <History />
       <Team />
       <Philosophy />

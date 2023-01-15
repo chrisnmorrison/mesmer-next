@@ -1,4 +1,5 @@
 import React from 'react'
+import Image from 'next/image'
 
 const Team = () => {
   return (
@@ -16,7 +17,9 @@ const Team = () => {
         <div className="col-lg-3 col-md-6">
           <div className="team-member">
             <div className="team-member-image" style={{backgroundImage: 'url(/)'}}>
-              <img src="https://d33wubrfki0l68.cloudfront.net/d006fb492e75e48e6c2e8dd746ed3b87f0370eea/2bcaa/images/team/profile.png" alt="team-member-image" />
+            <div className={"image-container"}>
+            <Image alt="team-member-image" src="/images/team/profile.png" fill className={"image img-fluid"} />
+              </div>
             </div>
             <div className="team-member-content text-center">
               <h6 className="sm">Chris Morrison</h6>

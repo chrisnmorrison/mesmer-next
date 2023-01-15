@@ -1,5 +1,5 @@
 import Link from "next/link";
-
+import Image from "next/image";
 import { Layout } from "../components/Layout";
 import { SEO } from "../components/Seo";
 import { getSortedPortfolio, getSortedPosts } from "@utils/posts";
@@ -10,7 +10,6 @@ import Cta1 from "@components/Cta/Cta1";
 
 export default function Home({ portfolio }) {
   return (
-    <Layout>
       <Styles>
       <PageTitle title="Portfolio" />
       <SEO title="All of our favourite portfolio projects" />
@@ -26,13 +25,14 @@ export default function Home({ portfolio }) {
                   data-aos="image-reveal"
                 >
                   <div className="portfolio-item text-center">
-                    <img
-                      src={image}
-                      className="img-fluid"
-                      alt={title}
-                      width={600}
-                      height={400}
-                    />
+                  <div className={"image-container"}>
+                  <Image
+                        alt="portfolio item thumbnail"
+                        src={`/${image}`}
+                        fill
+                        className={"image img-fluid"}
+                      />
+              </div>
                     <p className="sm product-name">{title}</p>
                   </div>
                 </a>{" "}
@@ -44,7 +44,6 @@ export default function Home({ portfolio }) {
 <Cta1/>
       
       </Styles>
-    </Layout>
   );
 }
 

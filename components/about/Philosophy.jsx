@@ -1,4 +1,5 @@
 import React from "react";
+import Image from "next/image";
 
 const Philosophy = () => {
   return (
@@ -7,11 +8,10 @@ const Philosophy = () => {
         <div className="row">
           <div className="col-lg-6 my-auto item-order-mob">
             <div className="philosophy-image mb-5 mb-lg-0 mt-5 mt-lg-1">
-              <img
-                src="https://d33wubrfki0l68.cloudfront.net/3856b80b3e5328f4474f4a928dbb39bc61c1370f/c265e/images/philosophy-image.jpg"
-                alt="philosophy"
-                className="w-100"
-              />
+            <div className={"image-container"}>
+            <Image alt="philosophy" src="/images/philosophy-image.jpg" fill className={"image img-fluid"} />
+              </div>
+              
             </div>
           </div>
           <div className="col-lg-5 align-self-center ml-auto">

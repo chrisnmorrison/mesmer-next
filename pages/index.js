@@ -6,6 +6,7 @@ import HomeHero from "@components/home/HomeHero";
 import Services from "@components/home/Services";
 import Cta1 from "@components/Cta/Cta1";
 import { getSortedPortfolio } from "@utils/posts";
+import Image from "next/image";
 
 export default function Home({ portfolio }) {
   return (
@@ -34,13 +35,15 @@ export default function Home({ portfolio }) {
                   data-aos="image-reveal"
                 >
                   <div className="portfolio-item text-center">
-                    <img
-                      src={image}
-                      className="img-fluid"
-                      alt={title}
-                      width={600}
-                      height={400}
-                    />
+                  <div className={"image-container"}>
+                  <Image
+                        alt="portfolio item thumbnail"
+                        src={`/${image}`}
+                        fill
+                        className={"image img-fluid"}
+                      />
+              </div>
+                   
                     <p className="sm product-name">{title}</p>
                   </div>
                 </a>{" "}
