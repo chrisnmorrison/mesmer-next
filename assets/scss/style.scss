@@ -18,7 +18,7 @@
 html {
   scroll-behavior: smooth;
   font-family: inherit;
-  transition: all 0.3s;
+  transition: all 0.2s;
 }
 
 .navbar-brand img,
@@ -41,9 +41,7 @@ img {
   border-radius: 5px;
 }
 
-.btn {
-  border-radius: 3px;
-}
+
 
 .case-timeline {
   position: relative;
@@ -182,7 +180,7 @@ a:hover{
 
   .hero-area {
     margin: 50px 0 10px 0;
-    padding: 177px 0 120px 0;
+    padding: 127px 0 120px 0;
   }
 
   .service-item .icon {

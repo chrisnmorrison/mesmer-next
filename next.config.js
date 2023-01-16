@@ -1,8 +1,8 @@
 const withCss = require("@zeit/next-css");
 const withPurgeCss = require("next-purgecss");
+const withOptimizedImages = require("next-optimized-images");
 
-module.exports = {
-  
+module.exports = withOptimizedImages({
   future: {
     webpack5: true, // by default, if you customize webpack config, they switch back to version 4.
     // Looks like backward compatibility approach.
@@ -16,5 +16,4 @@ module.exports = {
 
     return config;
   },
-};
-
+});

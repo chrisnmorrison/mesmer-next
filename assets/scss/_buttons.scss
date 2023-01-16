@@ -1,7 +1,22 @@
+.btn-group{
+    display: flex;
+    gap: 1.5rem;
+}
+
+.btn{
+    border-radius: 5px;
+    margin: 0 auto;
+}
+
+@media screen and (max-width: 1199px){
+    .btn-group{
+        flex-direction: column;
+    }
+}
+
 .btn-primary{
     padding: 20px 45px;
     color: $black;
-    border-radius: 0;
     text-transform: uppercase;
     font-weight: 700;
     outline: 0;
@@ -57,7 +72,6 @@
 
 
 .btn-dark{
-    border-radius: 0;
     padding: 20px 45px;
     color: $primary-color;
     text-transform: uppercase;
@@ -107,3 +121,61 @@
         }
     }
 }
+
+.btn-secondary{
+    padding: 20px 45px;
+    color: $black;
+    text-transform: uppercase;
+    font-weight: 700;
+    outline: 0;
+    box-shadow: none;
+    border: none;
+    position: relative;
+    z-index: 1;
+    background: transparent;
+    box-shadow: 0px 19px 32.55px 2.45px rgba($color: $primary-color, $alpha: .08);
+    overflow: hidden;
+    &:before{
+        content: '';
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        background: $white;
+        left: 0;
+        top: 0;
+        z-index: -2;
+    }
+    &:after{
+        content: '';
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        background: $primary-light;
+        left: 0;
+        top: 0;
+        z-index: -1;
+        transition: transform .5s ease;
+        transform: scaleX(0);
+        transform-origin: right;
+    }
+    &:hover{
+        color: #1e1e1e;
+        background: transparent;
+        &:after{
+            transform: scaleX(1);
+            transform-origin: left;
+        }
+    }
+    &:active{
+        color: #1a1a1a;
+        background: transparent;
+        outline: 0;
+        box-shadow: none;
+        &:after{
+            transform: scaleX(1);
+            transform-origin: left;
+        }
+    }
+}
+
+
