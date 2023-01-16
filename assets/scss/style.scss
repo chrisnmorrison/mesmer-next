@@ -21,13 +21,19 @@ html {
   transition: all 0.2s;
 }
 
+.nav-colored {
+  background-color: #000000e6;
+}
+
+.nav-transparent {
+  background-color: transparent;
+}
+
 .navbar-brand img,
 .logo a img {
   height: 2.8rem !important;
   width: auto;
 }
-
-
 
 .history .shape-big {
   display: none !important;
@@ -41,13 +47,11 @@ img {
   border-radius: 5px;
 }
 
-
-
 .case-timeline {
   position: relative;
 }
 
-a:hover{
+a:hover {
   text-decoration: none;
 }
 
@@ -90,7 +94,6 @@ a:hover{
   color: $primary-color;
 }
 
-
 @media only screen and (max-width: 768px) {
   h1,
   h2,
@@ -106,8 +109,8 @@ a:hover{
   .content,
   .btn,
   .service-item {
-    text-align: center ;
-    margin: 0 auto ;
+    text-align: center;
+    margin: 0 auto;
   }
   p {
     text-align: center;
@@ -238,13 +241,12 @@ a:hover{
     order: 2;
   }
 
-  p{
+  p {
     font-weight: 500;
   }
 }
 
 .image-container {
-
   width: 100%;
 
   > div {
@@ -260,13 +262,13 @@ a:hover{
 }
 
 @media only screen and (max-width: 1089px) {
-  #navigation #navbar-menu ul li a{
+  #navigation #navbar-menu ul li a {
     font-size: 1rem !important;
   }
 }
 
 @media only screen and (max-width: 1027px) {
-  #navigation #navbar-menu ul li a{
-    font-size: .95rem !important;
+  #navigation #navbar-menu ul li a {
+    font-size: 0.95rem !important;
   }
 }

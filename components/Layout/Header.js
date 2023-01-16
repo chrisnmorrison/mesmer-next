@@ -5,12 +5,11 @@ import styled from 'styled-components'
 
  const Header = () => {
   return (
-    <Styles>
 <header className="navigation">
   <div className="container-fluid">
     <div className="row">
       <div className="col-12">
-        <nav className="navbar fixed-top navbar-expand-lg">
+        <nav className="navbar fixed-top navbar-expand-lg nav-transparent">
           <Link className="navbar-brand anchor" href="/">
           <div className={"image-container"}>
                 <Image src="/images/icon.png" className={"image img-fluid"} alt="logo" height="40" width="40"/>
@@ -48,7 +47,6 @@ import styled from 'styled-components'
     </div>
   </div>
 </header>
-</Styles>
 
 
 
@@ -62,11 +60,3 @@ import styled from 'styled-components'
 
 export default Header
 
-export const Styles = styled.div`
-.nav-colored{
-background-color: black;
-}
-
-.nav-transparent{
-  background-color: transparent;
-}` 
