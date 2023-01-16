@@ -6,11 +6,10 @@ const Contact = () => {
     <section className="contact section">
       <div className="shape-big">
       
-         <Image
+         <img
         alt="background shape"
         src={`/images/shape-big.png`}
-        width={500}
-        height={500}
+   
      
       />
       </div>

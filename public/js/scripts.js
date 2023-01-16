@@ -1,6 +1,7 @@
 // define all UI letiable
 const navToggler = document.querySelector('.navbar-toggler');
 const navMenu = document.querySelector('#main-nav');
+const navTogglerNewPage = document.querySelectorAll('.nav-item')
 
 // load all event listners
 allEventListeners();
@@ -9,7 +10,14 @@ allEventListeners();
 function allEventListeners() {
   // toggler icon click event
   navToggler.addEventListener('click', togglerClick);
+
   // nav links click event
+  navTogglerNewPage.forEach(e => {
+    e.addEventListener('click', () => {
+      navMenu.classList.add("collapse");
+    });
+  })
+
 
 }
 

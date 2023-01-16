@@ -5,11 +5,10 @@ const Services = () => {
   return (
     <section className="service section" id="services">
       <div className="shape-big">
-        <Image
+        <img
           src="/images/shape-big.png"
           alt="background shape"
-          width={500}
-          height={500}
+        
         />
       </div>
       <div className="container">
