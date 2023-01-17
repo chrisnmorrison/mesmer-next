@@ -3,10 +3,7 @@ const withPurgeCss = require("next-purgecss");
 const withOptimizedImages = require("next-optimized-images");
 
 module.exports = withOptimizedImages({
-  images: {
-    loader: 'akamai',
-    path: '/',
-  },
+ 
   future: {
     webpack5: true, // by default, if you customize webpack config, they switch back to version 4.
     // Looks like backward compatibility approach.
