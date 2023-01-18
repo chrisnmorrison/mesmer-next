@@ -1,5 +1,4 @@
-const withCss = require("@zeit/next-css");
-const withPurgeCss = require("next-purgecss");
+
 const withOptimizedImages = require("next-optimized-images");
 
 module.exports = withOptimizedImages({
@@ -10,6 +9,11 @@ module.exports = withOptimizedImages({
   },
   webpack(config) {
     config.resolve.fallback = {
+      ...config.resolve.alias,
+      "react/jsx-runtime.js": "preact/compat/jsx-runtime",
+      react: "preact/compat",
+      "react-dom/test-utils": "preact/test-utils",
+      "react-dom": "preact/compat",
       ...config.resolve.fallback, // if you miss it, all the other options in fallback, specified
       // by next.js will be dropped. Doesn't make much sense, but how it is
       fs: false, // the solution

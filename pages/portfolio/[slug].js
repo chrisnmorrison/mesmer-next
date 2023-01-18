@@ -4,19 +4,14 @@ import { Prism as SyntaxHighlighter } from "react-syntax-highlighter";
 import style from "react-syntax-highlighter/dist/cjs/styles/prism/dracula";
 import Image from "next/image";
 import PageTitle from "@components/PageTitle";
-import markdownToHtml from '../../lib/markdownToHtml'
-import { remark } from 'remark';
-import html from 'remark-html';
+
 
 import remarkGfm from 'remark-gfm'
-import rehypeRaw from "rehype-raw";
-import { Layout } from "../../components/Layout";
 import { SEO } from "../../components/Seo";
 import {
   getPortfolioBySlug,
   getPortfolioSlugs,
-  getPostBySlug,
-  getPostsSlugs,
+
 } from "@utils/posts";
 
 export default function Post({ post, frontmatter, nextPost, previousPost, title, date, description, category, image, content }) {
