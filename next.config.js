@@ -1,7 +1,9 @@
 
-const withOptimizedImages = require("next-optimized-images");
+// const withOptimizedImages = require("next-optimized-images");
 
-module.exports = withOptimizedImages({
+// module.exports = withOptimizedImages({
+  module.exports = {
+
  
   future: {
     webpack5: true, // by default, if you customize webpack config, they switch back to version 4.
@@ -21,4 +23,4 @@ module.exports = withOptimizedImages({
 
     return config;
   },
-});
+};
