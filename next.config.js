@@ -3,13 +3,19 @@
 
 // module.exports = withOptimizedImages({
   module.exports = {
-
+    experimental: {
+      appDir: true,
+      fontLoaders: [
+        { loader: "@next/font/google", options: { subsets: ["latin"] } },
+      ],
+    },
  
   future: {
     webpack5: true, // by default, if you customize webpack config, they switch back to version 4.
     // Looks like backward compatibility approach.
   },
   webpack(config) {
+    
     config.resolve.fallback = {
       ...config.resolve.alias,
       "react/jsx-runtime.js": "preact/compat/jsx-runtime",
