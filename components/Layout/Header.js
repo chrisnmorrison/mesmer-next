@@ -17,7 +17,7 @@ import styled from 'styled-components'
           </Link >
           <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#main-nav">
             <span className="navbar-toggler-icon">
-              <img src="images/hamburger-icon.png" className="img-fluid" alt="menu" height="50" width="50"/>
+              <img src="/images/hamburger-icon.png" className="img-fluid" alt="menu" height="50" width="50"/>
             </span>
           </button>
           <div className="collapse navbar-collapse" id="main-nav">
