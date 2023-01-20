@@ -53,7 +53,7 @@ export default function Post({ post, frontmatter, nextPost, previousPost, title,
                 <p>{frontmatter.date}</p>
                 <h5>Category</h5>
                 <p>{frontmatter.category}</p>
-                <h5 className="mt-5">Interested in a similar service?</h5>
+                <h5 className="mt-5 mb-4">Interested in a similar service?</h5>
                 <Link href="/contact" className="btn btn-primary">
                   Contact Us
                 </Link>
