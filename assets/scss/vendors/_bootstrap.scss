@@ -31,7 +31,6 @@
   --breakpoint-md: 768px;
   --breakpoint-lg: 992px;
   --breakpoint-xl: 1200px;
-
 }
 *,
 ::after,
@@ -2346,11 +2345,15 @@ select.form-control-lg:not([size]):not([multiple]) {
   opacity: 1;
 }
 .collapse {
-  display: none;
+ max-height: 0 !important;
+ overflow: hidden;
+ transition: max-height 0.5s linear;
 }
 .collapse.show {
   display: block;
 }
+
+
 tr.collapse.show {
   display: table-row;
 }

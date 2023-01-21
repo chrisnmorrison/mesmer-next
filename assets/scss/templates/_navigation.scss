@@ -74,3 +74,8 @@
     text-align: center;
   }
 }
+
+.navbar-collapse{
+  max-height: 50vh;
+  transition: max-height 0.5s linear;
+}

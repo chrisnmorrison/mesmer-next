@@ -1,7 +1,8 @@
 // define all UI letiable
-const navToggler = document.querySelector('.navbar-toggler');
-const navMenu = document.querySelector('#main-nav');
-const navTogglerNewPage = document.querySelectorAll('.nav-item')
+const navToggler = document.querySelector(".navbar-toggler");
+const navMenu = document.querySelector("#main-nav");
+const navTogglerNewPage = document.querySelectorAll(".nav-item");
+const navIcon = document.querySelector(".navbar-brand");
 
 // load all event listners
 allEventListeners();
@@ -9,50 +10,54 @@ allEventListeners();
 // functions of all event listners
 function allEventListeners() {
   // toggler icon click event
-  navToggler.addEventListener('click', togglerClick);
+  navToggler.addEventListener("click", togglerClick);
+
+  navIcon.addEventListener("click", () => {
+    navMenu.classList.add("collapse");
+  });
 
   // nav links click event
-  navTogglerNewPage.forEach(e => {
-    e.addEventListener('click', () => {
+  navTogglerNewPage.forEach((e) => {
+    e.addEventListener("click", () => {
       navMenu.classList.add("collapse");
     });
-  })
-
-
+  });
 }
 
 // togglerClick function
 function togglerClick() {
-//   navToggler.classList.toggle('collapse');
-  navMenu.classList.toggle('collapse');
+  //   navToggler.classList.toggle('collapse');
+  navMenu.classList.toggle("collapse");
 }
 
 // navLinkClick function
 function navLinkClick() {
-  if(navMenu.classList.contains('open')) {
+  if (navMenu.classList.contains("open")) {
     navToggler.click();
   }
 }
 
 let prevScrollpos = window.scrollY;
-window.onscroll = function() {
-let currentScrollPos = window.scrollY;
+window.onscroll = function () {
+  let currentScrollPos = window.scrollY;
   if (prevScrollpos > currentScrollPos) {
     document.querySelector(".navbar").style.top = "0";
   } else {
     document.querySelector(".navbar").style.top = "-50px";
   }
   prevScrollpos = currentScrollPos;
-}
+};
 
-let myNav = document.querySelector('.navbar');
-window.onscroll = function () { 
-    if (document.body.scrollTop >= 200 || document.documentElement.scrollTop >= 200 ) {
-        myNav.classList.add("nav-colored");
-        myNav.classList.remove("nav-transparent");
-    } 
-    else {
-        myNav.classList.add("nav-transparent");
-        myNav.classList.remove("nav-colored");
-    }
+let myNav = document.querySelector(".navbar");
+window.onscroll = function () {
+  if (
+    document.body.scrollTop >= 200 ||
+    document.documentElement.scrollTop >= 200
+  ) {
+    myNav.classList.add("nav-colored");
+    myNav.classList.remove("nav-transparent");
+  } else {
+    myNav.classList.add("nav-transparent");
+    myNav.classList.remove("nav-colored");
+  }
 };

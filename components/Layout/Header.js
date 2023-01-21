@@ -15,7 +15,7 @@ import styled from 'styled-components'
                 <Image src="/images/icon.png" className={"image img-fluid"} alt="logo" height="40" width="40"/>
               </div>
           </Link >
-          <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#main-nav">
+          <button className="navbar-toggler" type="button" data-toggle="collapse" data-target=".collapse">
             <span className="navbar-toggler-icon">
               <img src="/images/hamburger-icon.png" className="img-fluid" alt="menu" height="50" width="50"/>
             </span>
