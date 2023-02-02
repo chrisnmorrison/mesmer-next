@@ -2,10 +2,7 @@
 
 // module.exports = withOptimizedImages({
 module.exports = {
-  images: {
-    loader: "akamai",
-    path: "/",
-  },
+
   experimental: {
     appDir: true,
     fontLoaders: [
