@@ -1,6 +1,7 @@
 import React from "react";
 import Link from "next/link";
 import styled from "styled-components";
+import Image from "next/image";
 
 const HomeHero = () => {
   return (
@@ -11,6 +12,8 @@ const HomeHero = () => {
         data-z-index={1}
         data-speed="0.4"
       >
+        <div className="hero-overlay"></div><Image style={{objectFit:"cover", background: "black"}} alt="team-member-image" src="/images/hero/hero.jpg" fill className={"image img-fluid hero-bg"} />
+         
         <div className="container">
           <div className="row">
             <div className="col-xl-6 col-12 ">
