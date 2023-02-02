@@ -2344,11 +2344,7 @@ select.form-control-lg:not([size]):not([multiple]) {
 .fade.show {
   opacity: 1;
 }
-.collapse {
- max-height: 0 !important;
- overflow: hidden;
- transition: max-height 0.5s linear;
-}
+
 .collapse.show {
   display: block;
 }

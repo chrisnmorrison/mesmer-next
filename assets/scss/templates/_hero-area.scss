@@ -51,7 +51,7 @@
       transform: skew(-20deg) translateX(-50%);
       background: $primary-light-opacity;
       z-index: -1;
-      @media screen and (max-width: 1199px){
+      @media screen and (max-width: 1200px) {
         display: none;
       }
     }
@@ -152,3 +152,12 @@
 // .parallax-mirror{
 //     z-index: 1 !important;
 // }
+
+@media screen and (max-width: 1199px) {
+  .hero-area {
+    h1,
+    p {
+      text-align: center;
+    }
+  }
+}

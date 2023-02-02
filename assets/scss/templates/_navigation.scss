@@ -75,7 +75,20 @@
   }
 }
 
-.navbar-collapse{
+
+
+.collapse {
+  max-height: 0 !important;
+  overflow: hidden;
+  transition: max-height 0.5s linear;
+ }
+ @media screen and (min-width: 992px) {
+   .collapse {
+     max-height: 10rem !important;
+    }
+ }
+ 
+ .navbar-collapse{
   max-height: 50vh;
   transition: max-height 0.5s linear;
 }
