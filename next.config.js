@@ -4,7 +4,7 @@
 module.exports = {
   images: {
     loader: "akamai",
-    path: "",
+    path: "/",
   },
   experimental: {
     appDir: true,
