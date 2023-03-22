@@ -18,7 +18,7 @@ collections:
     create: true # Allow users to create new documents in this collection
     fields: # The fields for each document, usually in front matter
       - { label: "Title", name: "title", widget: "string" }
-      - { label: "Featured Image", name: "image", widget: "image" }
+      - { label: "Featured Image Filename", name: "image", widget: "string" }
       - {
           label: "Publish Date",
           name: "date",
