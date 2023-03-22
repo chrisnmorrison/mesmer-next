@@ -2,7 +2,7 @@ import Link from "next/link";
 import Image from "next/image";
 import { Layout } from "../components/Layout";
 import { SEO } from "../components/Seo";
-import { getSortedBlog } from "@utils/posts";
+import { getSortedBlog, getBlogSlugs } from "@utils/posts";
 // import { generateRssPostsFeed } from "@utils/rss";
 import PageTitle from "@components/PageTitle";
 import styled from "styled-components";
@@ -18,8 +18,9 @@ export default function Home({ blog }) {
         <section className="section blog">
           <div className="container">
             <div className="row align-items-center">
-              {blog.map(({ frontmatter: { title, image }, slug }) => (
+              {blog.map(({ frontmatter: { title, image }, slug, excerpt }) => (
                 <div className="col-12 col-md-6" key={slug}>
+                  
                   <a
                     href={`/blog/${encodeURIComponent(slug)}`}
                     className="image-holder"
@@ -29,14 +30,15 @@ export default function Home({ blog }) {
                       <div className={"image-container"}>
                         <Image
                           alt="blog item thumbnail"
-                          src={`/${image}`}
+                          src={`${image}`}
                           fill
                           className={"image img-fluid"}
                         />
                       </div>
                       <p className="sm product-name">{title}</p>
+                      <p>{excerpt}</p>
                     </div>
-                  </a>{" "}
+                  </a>
                 </div>
               ))}
             </div>

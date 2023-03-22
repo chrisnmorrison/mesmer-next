@@ -36,7 +36,8 @@ export function getSortedBlog() {
         .toString();
 
       // Parse markdown, get frontmatter data, excerpt and content.
-      const { data, excerpt, content } = matter(markdownWithMetadata);
+      const { data, content } = matter(markdownWithMetadata);
+      const excerpt = content.substring(0, 160);
 
       const frontmatter = {
         ...data,
@@ -84,7 +85,6 @@ export function getBlogBySlug(slug) {
 
   return { frontmatter, post: { content, excerpt }, previousPost, nextPost };
 }
-
 
 ///////////////////////////
 // PORTFOLIO
