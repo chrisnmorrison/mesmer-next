@@ -15,6 +15,13 @@ module.exports = {
     // Looks like backward compatibility approach.
   },
   webpack(config) {
+    config.module.rules.push(
+      {
+          test: /\.md$/,
+          loader: 'frontmatter-markdown-loader',
+          options: { mode: ['react-component'] }
+      }
+  ),
     config.resolve.fallback = {
       ...config.resolve.alias,
       "react/jsx-runtime.js": "preact/compat/jsx-runtime",
