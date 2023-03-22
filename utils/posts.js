@@ -14,7 +14,7 @@ function getFormattedDate(date) {
 ///////////////////////////
 
 export function getBlogFolder() {
-  // Get all posts folders located in `content/portfolio`
+  // Get all posts folders located in `content/blog`
   const blogFolders = fs
     .readdirSync(`${process.cwd()}/content/blog`)
     .map((folderName) => ({
