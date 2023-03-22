@@ -30,7 +30,7 @@ export default function Home({ blog }) {
                       <div className={"image-container"}>
                         <Image
                           alt="blog item thumbnail"
-                          src={`${image}`}
+                          src={`/images/blog/${image}`}
                           fill
                           className={"image img-fluid"}
                         />
