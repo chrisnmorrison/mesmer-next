@@ -18,7 +18,7 @@ const Team = () => {
           <div className="team-member">
             <div className="team-member-image" style={{backgroundImage: 'url(/)'}}>
             <div className={"image-container"}>
-            <Image alt="team-member-image" src="/images/team/profile.jpg" fill className={"image img-fluid"} />
+            <Image alt="team-member-image" src="/images/team/profile.png" fill className={"image img-fluid"} />
               </div>
             </div>
             <div className="team-member-content text-center">

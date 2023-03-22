@@ -30,6 +30,6 @@ collections:
           label: "Category",
           name: "categories",
           widget: "select",
-          options: ["Advice", "AI", "Guide", "News", "Mental Health", "Tips", "Web Development", "Other"],
+          options: ["Advice", "News", "Guide", "Other"],
         }
       - { label: "Body", name: "body", widget: "markdown" }
