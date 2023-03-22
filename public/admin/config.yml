@@ -7,7 +7,7 @@ collections:
   - name: "blog" # Used in routes, e.g., /admin/collections/post
     label: "Blog" # Used in the UI
     folder: "content/blog" # The path to the folder where the documents are stored
-    path: "{{slug}}/index"
+    path: "{{slug}}/{{slug}}"
     slug: "{{slug}}" # Filename template, e.g., YYYY-MM-DD-title.md
     media_folder: "public/images" # Save images in the post's own folder instead of the static folder
     public_folder: "images"
