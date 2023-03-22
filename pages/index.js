@@ -12,6 +12,7 @@ export default function Home({ portfolio }) {
   return (
     <>
       <SEO title="Home" />
+      <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
       <HomeHero />
       <Services />
       <div className="col-12 text-center">
@@ -35,15 +36,15 @@ export default function Home({ portfolio }) {
                   data-aos="image-reveal"
                 >
                   <div className="portfolio-item text-center">
-                  <div className={"image-container"}>
-                  <Image
+                    <div className={"image-container"}>
+                      <Image
                         alt="portfolio item thumbnail"
                         src={`/${image}`}
                         fill
                         className={"image img-fluid"}
                       />
-              </div>
-                   
+                    </div>
+
                     <p className="sm product-name">{title}</p>
                   </div>
                 </a>{" "}
@@ -51,12 +52,12 @@ export default function Home({ portfolio }) {
             ))}
           </div>
         </div>
-    <div className="col-12 mt-3 text-center">
-         <Link href="/portfolio" className="btn btn-primary">
-          More Projects
-        </Link>
-      </div>{" "} </section>{" "}
-      
+        <div className="col-12 mt-3 text-center">
+          <Link href="/portfolio" className="btn btn-primary">
+            More Projects
+          </Link>
+        </div>{" "}
+      </section>{" "}
       <Cta1 />
     </>
   );
