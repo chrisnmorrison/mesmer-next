@@ -2,7 +2,7 @@ import React from 'react'
 import styled from 'styled-components'
 
 const SidebarCard = ( props) => {
-  return <SidebarCardStyles className='sidebar-card'>{props.children}</SidebarCardStyles>
+  return <div className='sidebar-card'>{props.children}</div>
 }
 
 const SidebarCardStyles = styled.div`
