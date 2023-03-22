@@ -56,10 +56,7 @@ export default function Home({ portfolio }) {
           More Projects
         </Link>
       </div>{" "} </section>{" "}
-      <script>
-     
-  
-</script>
+      
       <Cta1 />
     </>
   );

@@ -1,10 +1,5 @@
 import { ThemeProvider } from "next-themes";
 import { Layout } from "./../components/Layout";
-import CMS from "netlify-cms-app";
-// Initialize the CMS object
-CMS.init();
-// Now the registry is available via the CMS object.
-CMS.registerPreviewTemplate("my-template", MyTemplate);
 // import { Montserrat, EB_Garamond } from "@next/font/google";
 // import Head from "next/head";
 // const montserrat = Montserrat({ subsets: ["latin"] });
@@ -14,26 +9,15 @@ CMS.registerPreviewTemplate("my-template", MyTemplate);
 
 // const garamond = EB_Garamond({
 //   variable: "--display-font",
-//   weight: [ 'variable']
+//   weight: [ 'variable'] 
 // });
 
 import "@assets/scss/style.scss";
 
 export default function MyApp({ Component, pageProps }) {
-  useEffect(() => {
-    if (window.netlifyIdentity) {
-      window.netlifyIdentity.on("init", (user) => {
-        if (!user) {
-          window.netlifyIdentity.on("login", () => {
-            document.location.href = "/admin/";
-          });
-        }
-      });
-    }
-  });
   return (
     <>
-      {/* <style jsx global>{
+     {/* <style jsx global>{
       `
         html {
           font-family: ${montserrat.style.fontFamily};
@@ -42,16 +26,16 @@ export default function MyApp({ Component, pageProps }) {
   font-family: ${garamond.style.fontFamily};
 }` 
       }</style> */}
-      <Layout>
-        <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>{" "}
-        <ThemeProvider
-          defaultTheme="system"
-          enableSystem={true}
-          attribute="class"
-        >
-          <Component {...pageProps} />
-        </ThemeProvider>
-      </Layout>
-    </>
+    <Layout >
+      
+      {" "}
+      <ThemeProvider
+        defaultTheme="system"
+        enableSystem={true}
+        attribute="class"
+      >
+        <Component {...pageProps} />
+      </ThemeProvider>
+    </Layout></>
   );
 }
