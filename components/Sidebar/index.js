@@ -7,7 +7,7 @@ import SidebarCategories from './SidebarCategories'
 
 const Sidebar = () => {
   return (
-    <div className="col-md-3 col-12 blog-sidebar">
+    <div className=" blog-sidebar">
       <SidebarStyles>
         <About />
         <Partners />

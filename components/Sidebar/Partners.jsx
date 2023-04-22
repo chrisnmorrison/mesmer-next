@@ -29,12 +29,12 @@ const Recent = () => {
         {partners.map(partner => {
           return (
             <div key={partner.name} className="partner">
-               <Image
+               {/* <Image
           alt="blog item thumbnail"
           src={`/images/icon.png`}
           fill
           className={"image img-fluid"}
-        />
+        /> */}
               
               <a target='_blank' rel='noopener noreferrer' className="partner-name" href={partner.url}>
                 {partner.name}

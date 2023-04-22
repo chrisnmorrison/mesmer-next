@@ -13,8 +13,9 @@ const About = () => {
         <Image
           alt="blog item thumbnail"
           src={`/images/icon.png`}
-          fill
-          className={"image img-fluid"}
+          width={200}
+          height={200}
+          className={"image img-fluid sidebar-img"}
         />
         <p>Find the best free educational resources on your favourite topic.</p>
         <p>Revista is free and open-source forever.</p>
@@ -33,6 +34,11 @@ const Wrapper = styled.div`
     /* border-radius: 50%; */
     margin: 0 auto;
     margin-bottom: 1rem;
+  }
+
+  .sidebar-img{
+    width: 5rem;
+    height: 100%;
   }
 `;
 export default About;

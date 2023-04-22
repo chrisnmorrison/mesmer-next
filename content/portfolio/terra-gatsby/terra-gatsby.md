@@ -1,7 +1,7 @@
 ---
 
 title: "Terra Demo v2 (Gatsby)"
-date: 2020-04-19T11:00:00.000Z
+date: 2022-04-19T11:00:00.000Z
 draft: false
 description: "Completely static pages using Gatsby, and Static Blog using NetlifyCMS"
 category: "Web Development"

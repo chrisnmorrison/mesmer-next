@@ -13,7 +13,6 @@
   },
   "dependencies": {
     "@fullhuman/postcss-purgecss": "^5.0.0",
-    "@next/font": "^13.1.2",
     "@svgr/webpack": "^6.5.1",
     "clsx": "^1.2.1",
     "feed": "^4.2.2",
