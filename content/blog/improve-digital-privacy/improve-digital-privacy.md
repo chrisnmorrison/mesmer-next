@@ -1,15 +1,13 @@
 ---
 title: Quick, Easy Ways to Improve your Digital Privacy
-image: test.jpg
+image: privacy.jpg
 date: 2023-03-22T19:11:12.727Z
 categories: Advice
 ---
 
-Mark Zuckerberg may think that digital privacy is no longer a social norm, but I'm confident that the vast majority of experts and the general population disagree.
+While Mark Zuckerberg may argue that digital privacy is no longer a social norm, most experts and the general public still prioritize it highly. The phrases "privacy concerns" and "data leaks" have become all too common, and it's worrying to think that our personal information is scattered across the internet. Not only do we risk having this information publicly available, but we also face the possibility of personal information leaks. For instance, Equifax experienced one of the largest data breaches in the 21st century, with hackers potentially stealing millions of social insurance and driver's license numbers, and other identifying information that could be used to steal an identity.
 
-"Privacy concerns" and "data leaks" are common phrases we hear too often. Most of us have information all over the internet, and this can be concerning. There are two problems here. One, we may not want this data to be publicly available. Two, what if this information is personal, but it gets leaked? For example, Equifax had one of the [largest data leaks in the 21st century](https://www.csoonline.com/article/3444488/equifax-data-breach-faq-what-happened-who-was-affected-what-was-the-impact.html). Hackers potentially stole millions of social insurance numbers, drivers license numbers, and other identifying information that could be used to steal an identity.
-
-While I'm not suggesting that we stop giving our information to credit bureaus, the point I'm making is that we have personal information everywhere. It's next to impossible to remove our digital footprint from the internet altogether. As difficult as this would be, there are a few easy steps that you can take that may help reduce your digital footprint.
+Although it's virtually impossible to remove our digital footprint altogether, there are a few easy steps we can take to reduce it:
 
 ### 1. If you can't remove yourself from social media, make sure your social media is positive and mature
 
