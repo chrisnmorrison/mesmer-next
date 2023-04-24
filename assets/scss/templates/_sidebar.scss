@@ -1,13 +1,11 @@
-
 .blog-sidebar {
   display: grid;
   grid-template-columns: 200px;
   justify-content: center;
   row-gap: 1rem;
-  margin-top: 3.4rem;
 
   @media (min-width: 576px) {
-    grid-template-columns: repeat(auto-fit, 92%);
+    grid-template-columns: repeat(auto-fit, 100%);
     column-gap: 3rem;
   }
   @media screen and (max-width: 767px) {
@@ -60,7 +58,7 @@
   margin-bottom: 1.875rem;
   padding: 1.5rem 0.9rem;
   border-radius: 5px;
-  border-top: 6px solid var(--primary-5);
+  border-top: 6px solid $primary-light;
   background-color: white;
   box-shadow: 0 15px 25px rgba(30, 30, 30, 0.06);
 }
@@ -152,6 +150,10 @@
   position: relative;
   text-align: center;
   margin-bottom: 1.5rem;
+
+  h4{
+    color: rgb(92, 92, 92);;
+  }
 }
 
 .line {
@@ -163,4 +165,98 @@
   transform: translateY(-50%);
   background: var(--primary-5);
   z-index: -1;
+}
+
+.sidebar-title {
+  color: #5c5c5c;
+  text-transform: uppercase;
+  font-weight: 700;
+  background: none;
+  //display: inline-block;
+  margin-bottom: 0px;
+  padding: 0px 0.6rem;
+}
+
+li {
+  list-style: none;
+}
+
+.nav-icons {
+  padding: 0 !important;
+}
+
+.nav-icons .social-icon {
+  transition: all 0.3s linear;
+}
+
+.nav-icons .social-icon:hover {
+  color: #80c3df;
+  transform: translateY(-5px);
+}
+
+.category-text-color {
+  color: black;
+}
+
+.recent-articles-heading {
+  font-size: 1.6rem !important;
+  text-align: left;
+  color: #3e3e3e;
+}
+
+.card {
+  border-radius: 5px;
+  overflow: hidden;
+  box-shadow: 0 15px 25px rgba(30, 30, 30, 0.1);
+  border: none;
+
+  p {
+    color: #555454;
+    font-size: 17px;
+    font-weight: 400;
+    margin-bottom: 1.25rem;
+    text-align: left;
+  }
+}
+
+.recent-article-mb {
+  margin-bottom: 3rem;
+}
+
+.blog-btn {
+text-align: left;
+
+  .btn:hover {
+    color: var(--white);
+  }
+  .btn,
+  .btn:hover {
+    background: #2a85ac;
+  }
+  a:hover {
+    color: #2a85ac;
+  }
+  .btn-outline-primary {
+    background: 0 0;
+    border-color: #2a85ac;
+    color: #2a85ac;
+  }
+  .btn {
+    border: 1px solid;
+    border-top-color: currentcolor;
+    border-right-color: currentcolor;
+    border-bottom-color: currentcolor;
+    border-left-color: currentcolor;
+    border-radius: 50px;
+    color: #2a85ac;
+    cursor: pointer;
+    display: inline-block;
+    font-size: 14px;
+    font-weight: 700;
+    letter-spacing: 1.5px;
+    padding: 0.575rem 1.2rem;
+    text-transform: uppercase;
+    -webkit-transition: all 0.3s linear;
+    transition: all 0.3s linear;
+  }
 }

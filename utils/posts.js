@@ -61,6 +61,37 @@ export function getSortedBlog() {
   return posts;
 }
 
+export function getUniqueBlogCategories() {
+  const postFolders = getBlogFolder();
+  const categories = [];
+
+  const posts = postFolders.map(({ filename, directory }) => {
+    // Get raw content from file
+    const markdownWithMetadata = fs
+      .readFileSync(`content/blog/${directory}/${filename}`)
+      .toString();
+
+    // Parse markdown, get frontmatter data, excerpt and content.
+    const { data } = matter(markdownWithMetadata);
+    categories.push(data.categories);
+
+    // const frontmatter = {
+    //   ...data,
+    // };
+
+    // // Get category data and push it to categories array
+    // if (frontmatter.category && !categories.includes(frontmatter.category)) {
+    //   categories.push(frontmatter.category);
+    // }
+
+    // return {
+    //   frontmatter,
+    // };
+  });
+  const uniqueCategories = [...new Set(categories)].sort();
+  return uniqueCategories;
+}
+
 export function getBlogSlugs() {
   const blogFolders = getBlogFolder();
 

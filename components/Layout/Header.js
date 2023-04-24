@@ -23,7 +23,7 @@ import styled from 'styled-components'
           <div className="collapse navbar-collapse" id="main-nav">
           <ul className="navbar-nav ml-auto">
                 <li className="nav-item">
-                  <Link data-toggle="collapse" data-target="#" href="/" className="nav-link"> Home </Link>
+                  <Link data-toggle="collapse" data-target="#" href="/" className="nav-link">Home</Link>
                 </li>
                 <li className="nav-item">
                   <Link className="nav-link" href="/about">About</Link>
@@ -36,6 +36,9 @@ import styled from 'styled-components'
                 </li>
                 <li className="nav-item">
                   <Link className="nav-link" href="/services">Services</Link>
+                </li>
+                <li className="nav-item">
+                  <Link className="nav-link" href="/blog">Blog</Link>
                 </li>
                 <li className="nav-item">
                   <Link className="nav-link" href="/contact">Contact</Link>

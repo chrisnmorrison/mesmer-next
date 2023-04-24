@@ -41,12 +41,12 @@ const HomeHero = () => {
                     See Our Work
                   </Link>
                   <Link
-                    href="/portfolio"
+                    href="/contact"
                     className="btn btn-secondary"
                     data-aos="fade-up"
                     data-aos-delay={200}
                   >
-                    Request a Quote
+                    Get an Estimate
                   </Link>
                 </div>
               </div>

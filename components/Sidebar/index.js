@@ -5,13 +5,13 @@ import Partners from './Partners'
 import SidebarCategories from './SidebarCategories'
 
 
-const Sidebar = () => {
+const Sidebar = (props) => {
   return (
     <div className=" blog-sidebar">
       <SidebarStyles>
         <About />
         <Partners />
-        <SidebarCategories />
+        <SidebarCategories categories={props} />
         {/* <SidebarImage/> */}
       </SidebarStyles>
     </div>
@@ -23,10 +23,9 @@ const SidebarStyles = styled.aside`
   grid-template-columns: 200px;
   justify-content: center;
   row-gap: 1rem;
-  margin-top: 3.4rem;
   @media (min-width: 576px) {
     & {
-      grid-template-columns: repeat(auto-fit, 92%);
+      grid-template-columns: repeat(auto-fit, 100%);
       column-gap: 3rem;
     }
   }

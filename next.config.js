@@ -2,10 +2,15 @@
 
 // module.exports = withOptimizedImages({
 module.exports = {
+  reactStrictMode: true,
 
   experimental: {
     appDir: true,
    
+  },
+  compiler: {
+    // Enables the styled-components SWC transform
+    styledComponents: true
   },
 
   future: {

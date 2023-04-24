@@ -78,7 +78,7 @@
 .collapse {
   max-height: 0 !important;
   overflow: hidden;
-  transition: max-height 0.5s linear;
+  transition: max-height 0.3s ease-out;
 }
 @media screen and (min-width: 992px) {
   .collapse {
@@ -88,5 +88,5 @@
 
 .navbar-collapse {
   max-height: 50vh;
-  transition: max-height 0.5s linear;
+  transition: max-height 0.3s ease-out;
 }

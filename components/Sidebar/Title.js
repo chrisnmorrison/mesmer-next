@@ -3,10 +3,11 @@ import styled from 'styled-components'
 
 const Title = ({ title }) => {
   return (
-    <div className='sidebar-title'>
+    <Wrapper> <div className='sidebar-title'>
       <h4>{title}</h4>
       <div className="line"></div>
-    </div>
+    </div></Wrapper>
+   
   )
 }
 const Wrapper = styled.div`
