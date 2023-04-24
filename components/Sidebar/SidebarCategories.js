@@ -13,7 +13,7 @@ const SidebarCategories = ({ categories }) => {
         <ul>
           {categoryList.map((category) => (
             <li>
-              <Link className="category" href="#">
+              <Link prefetch={false} className="category" href="#">
                 {category}
               </Link>
             </li>

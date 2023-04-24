@@ -32,7 +32,7 @@ const Footer = () => {
               className="navbar-brand"
               style={{ marginBottom: "1.5rem", marginRight: 0 }}
             >
-              <Link href="/">
+              <Link prefetch={false} href="/">
                 <div className={"image-container"}>
                   <Image
                     src="/images/icon.png"
@@ -50,22 +50,34 @@ const Footer = () => {
               <nav className="footer-nav nav-bg">
                 <ul className="list-inline">
                   <li className="list-inline-item">
-                    <Link href="/">Home</Link>
+                    <Link prefetch={false} href="/">
+                      Home
+                    </Link>
                   </li>
                   <li className="list-inline-item">
-                    <Link href="/about">About</Link>
+                    <Link prefetch={false} href="/about">
+                      About
+                    </Link>
                   </li>
                   <li className="list-inline-item">
-                    <Link href="/portfolio">Portfolio</Link>
+                    <Link prefetch={false} href="/portfolio">
+                      Portfolio
+                    </Link>
                   </li>
                   <li className="list-inline-item">
-                    <Link href="/faq">FAQ</Link>
+                    <Link prefetch={false} href="/faq">
+                      FAQ
+                    </Link>
                   </li>
                   <li className="list-inline-item">
-                    <Link href="/services">Services</Link>
+                    <Link prefetch={false} href="/services">
+                      Services
+                    </Link>
                   </li>
                   <li className="list-inline-item">
-                    <Link href="/contact">Contact</Link>
+                    <Link prefetch={false} href="/contact">
+                      Contact
+                    </Link>
                   </li>
                 </ul>
               </nav>

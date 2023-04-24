@@ -53,7 +53,7 @@ export default function Home({ portfolio }) {
           </div>
         </div>
         <div className="col-12 mt-3 text-center">
-          <Link href="/portfolio" className="btn btn-primary">
+          <Link prefetch={false} href="/portfolio" className="btn btn-primary">
             More Projects
           </Link>
         </div>{" "}

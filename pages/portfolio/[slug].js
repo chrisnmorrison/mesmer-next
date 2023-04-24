@@ -5,17 +5,23 @@ import style from "react-syntax-highlighter/dist/cjs/styles/prism/dracula";
 import Image from "next/image";
 import PageTitle from "@components/PageTitle";
 
-
-import remarkGfm from 'remark-gfm'
+import remarkGfm from "remark-gfm";
 import { SEO } from "../../components/Seo";
-import {
-  getPortfolioBySlug,
-  getPortfolioSlugs,
+import { getPortfolioBySlug, getPortfolioSlugs } from "@utils/posts";
 
-} from "@utils/posts";
-
-export default function Post({ post, frontmatter, nextPost, previousPost, title, date, description, category, image, content }) {
-  console.log(frontmatter)
+export default function Post({
+  post,
+  frontmatter,
+  nextPost,
+  previousPost,
+  title,
+  date,
+  description,
+  category,
+  image,
+  content,
+}) {
+  console.log(frontmatter);
   return (
     <>
       <SEO
@@ -38,9 +44,16 @@ export default function Post({ post, frontmatter, nextPost, previousPost, title,
                 />
               </div>
               <div className="work-single-content">
-              <ReactMarkdown  remarkPlugins={[remarkGfm]} >{post.content}</ReactMarkdown>
-        {frontmatter.github ? <a target='_blank' rel='noopener noreferrer' href={frontmatter.github}/> : null}
-               
+                <ReactMarkdown remarkPlugins={[remarkGfm]}>
+                  {post.content}
+                </ReactMarkdown>
+                {frontmatter.github ? (
+                  <a
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    href={frontmatter.github}
+                  />
+                ) : null}
               </div>
             </div>
             <div className="col-lg-4">
@@ -54,7 +67,11 @@ export default function Post({ post, frontmatter, nextPost, previousPost, title,
                 <h5>Category</h5>
                 <p>{frontmatter.category}</p>
                 <h5 className="mt-5 mb-4">Interested in a similar service?</h5>
-                <Link href="/contact" className="btn btn-primary">
+                <Link
+                  prefetch={false}
+                  href="/contact"
+                  className="btn btn-primary"
+                >
                   Contact Us
                 </Link>
               </div>
@@ -62,10 +79,9 @@ export default function Post({ post, frontmatter, nextPost, previousPost, title,
           </div>
         </div>
       </section>
-      </>
+    </>
   );
 }
-
 
 export async function getStaticPaths() {
   const paths = getPortfolioSlugs();
@@ -97,6 +113,3 @@ const CodeBlock = ({ language, value }) => {
     </SyntaxHighlighter>
   );
 };
-
-
-
