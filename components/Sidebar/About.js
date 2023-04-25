@@ -18,10 +18,12 @@ const About = () => {
           className={"image img-fluid sidebar-img"}
         />
         <p>
-        Get the latest on optimized static sites and small business website management, SEO, and more with our web dev blog. 
+          Get the latest on optimized static sites and small business website
+          management, SEO, and more with our web dev blog.
         </p>
         <p>
-        Stay ahead with our informative articles and guides on the latest web technology.
+          Stay ahead with our informative articles and guides on the latest web
+          technology.
         </p>
         <SocialLinks className="sidebar-icons" />
       </Wrapper>

@@ -13,8 +13,15 @@ const HomeHero = () => {
         data-speed="0.4"
       >
         <div className="hero-overlay"></div>
-        <Image style={{objectFit:"cover", background: "black"}} alt="team-member-image" src="/images/hero/hero.jpg" fill priority className={"image img-fluid hero-bg"} />
-         
+        <Image
+          style={{ objectFit: "cover", background: "black" }}
+          alt="team-member-image"
+          src="/images/hero/hero.jpg"
+          fill
+          priority
+          className={"image img-fluid hero-bg"}
+        />
+
         <div className="container">
           <div className="row">
             <div className="col-xl-6 col-12 ">

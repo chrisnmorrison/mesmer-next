@@ -13,7 +13,7 @@ import { GoCalendar } from "react-icons/go";
 import { getColor } from "../components/utils/heroCategories";
 
 export default function Home({ blog, categories }) {
-  console.log(categories)
+  console.log(categories);
   return (
     <Styles>
       <PageTitle title="Blog" />
@@ -63,7 +63,6 @@ export default function Home({ blog, categories }) {
                               <ul className="card-meta-tag list-inline">
                                 <li className="list-inline-item">
                                   <div
-                                   
                                     className="categories-link"
                                     style={{
                                       color: getColor(categories),
@@ -78,8 +77,8 @@ export default function Home({ blog, categories }) {
                               </ul>
                             </li>
                           </ul>
-                         
-                            <p className="excerpt">{excerpt}</p>
+
+                          <p className="excerpt">{excerpt}</p>
                           <div className="blog-btn">
                             {" "}
                             <button

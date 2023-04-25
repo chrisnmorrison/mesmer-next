@@ -1,15 +1,15 @@
-import React from 'react'
-import styled from 'styled-components'
-import Image from 'next/image'
-import Title from './Title'
-import SidebarCard from './SidebarCard'
+import React from "react";
+import styled from "styled-components";
+import Image from "next/image";
+import Title from "./Title";
+import SidebarCard from "./SidebarCard";
 
 const partners = [
   {
-    name: 'Open Mastery',
-    logo: '/images/open-mastery-logo.png',
-    logoAlt: 'Logo for other site',
-    url: 'https://example.com',
+    name: "Open Mastery",
+    logo: "/images/open-mastery-logo.png",
+    logoAlt: "Logo for other site",
+    url: "https://example.com",
   },
   //
   // {
@@ -18,7 +18,7 @@ const partners = [
   //   logoAlt: 'Logo for Open Journal',
   //   url: '#',
   // },
-]
+];
 
 const Recent = () => {
   return (
@@ -26,28 +26,32 @@ const Recent = () => {
       <Wrapper>
         <Title title="Our Partners" className="sidebar-title" />
         {/* <p>Building an open internet together.</p> */}
-        {partners.map(partner => {
+        {partners.map((partner) => {
           return (
             <div key={partner.name} className="partner">
-               <a target='_blank' rel='noopener noreferrer' className="partner-name" href={partner.url}>
-               <Image
-          alt="blog item thumbnail"
-          src={partner.logo}
-          width={200}
-          height={200}
-          className={"image-fluid om-logo"}
-        />
-              
-             
+              <a
+                target="_blank"
+                rel="noopener noreferrer"
+                className="partner-name"
+                href={partner.url}
+              >
+                <Image
+                  alt="blog item thumbnail"
+                  src={partner.logo}
+                  width={200}
+                  height={200}
+                  className={"image-fluid om-logo"}
+                />
+
                 {partner.name}
               </a>
             </div>
-          )
+          );
         })}
       </Wrapper>
     </SidebarCard>
-  )
-}
+  );
+};
 
 const Wrapper = styled.div`
   text-align: center;
@@ -77,20 +81,20 @@ const Wrapper = styled.div`
     font-weight: 500;
     transition: all 0.3s;
 
-    &:hover{
+    &:hover {
       color: #333333;
     }
   }
 
-  .om-logo{
+  .om-logo {
     width: 2rem;
     height: 100%;
-    margin-right: .8rem;
+    margin-right: 0.8rem;
   }
 
   @media screen and (max-width: 1085px) {
     .partner-name {
-     font-size: 14px;
+      font-size: 14px;
     }
   }
 
@@ -102,6 +106,6 @@ const Wrapper = styled.div`
       margin: 1rem auto 1.2rem auto;
     }
   }
-`
+`;
 
-export default Recent
+export default Recent;

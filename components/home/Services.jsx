@@ -5,11 +5,7 @@ const Services = () => {
   return (
     <section className="service section" id="services">
       <div className="shape-big">
-        <img
-          src="/images/shape-big.png"
-          alt="background shape"
-        
-        />
+        <img src="/images/shape-big.png" alt="background shape" />
       </div>
       <div className="container">
         <div className="row">
@@ -45,7 +41,7 @@ const Services = () => {
           <div className="col-lg-4 col-md-6">
             <div className="service-item">
               <div className="icon">
-              <Image
+                <Image
                   src="/images/bandwidth.png"
                   alt="Bandwidth icon"
                   width={55}
@@ -64,7 +60,7 @@ const Services = () => {
           <div className="col-lg-4 col-md-6">
             <div className="service-item">
               <div className="icon">
-              <Image
+                <Image
                   src="/images/responsive-design.png"
                   alt="responsive Design icon"
                   width={55}
