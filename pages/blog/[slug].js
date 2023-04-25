@@ -1,13 +1,15 @@
 import Link from "next/link";
 import ReactMarkdown from "react-markdown";
-import { Prism as SyntaxHighlighter } from "react-syntax-highlighter";
-import style from "react-syntax-highlighter/dist/cjs/styles/prism/dracula";
 import Image from "next/image";
-import { Layout } from "@components/Layout";
 import { SEO } from "../../components/Seo/Seo";
 import remarkGfm from "remark-gfm";
 import PageTitle from "@components/PageTitle";
 import styled from "styled-components";
+import { Source_Sans_Pro } from "next/font/google";
+const sourceSansPro = Source_Sans_Pro({
+  weight: ["300", "400", "600", "700"],
+  subsets: ["latin"],
+});
 
 import { getBlogBySlug, getBlogSlugs } from "@utils/posts";
 
@@ -20,7 +22,7 @@ export default function Post({ post, frontmatter, nextPost, previousPost }) {
           description={frontmatter.description || post.excerpt}
         />
         <PageTitle title={frontmatter.title} />
-
+      <div  >
         <section className="work-single section">
           <div className="container">
             <div className="row">
@@ -74,6 +76,7 @@ export default function Post({ post, frontmatter, nextPost, previousPost }) {
             </div>
           </div>
         </section>
+        </div>
       </article>
     </Wrapper>
   );

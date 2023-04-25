@@ -2,12 +2,9 @@ import Header from "./Header";
 import Footer from "./Footer";
 import Script from "next/script";
 
-import { Montserrat, Merriweather, Source_Sans_Pro } from "next/font/google";
+import { Montserrat } from "next/font/google";
 const montserrat = Montserrat({ subsets: ["latin"] });
-const sourceSansPro = Source_Sans_Pro({
-  weight: ["300", "400", "600", "700"],
-  subsets: ["latin"],
-});
+
 
 // import { Poppins } from "next/font/google";
 // const poppins = Poppins({
